@@ -18,11 +18,11 @@ export const AppProvider = ({ children }) => {
 
     //₋Moodal Functions ₋
     const openModal = () => {
-        setIsSidebarOpen(true);
+        setIsModalOpen(true);
     }
     
         const closeModal = () => {
-       setIsModalOpen(false);
+        setIsModalOpen(false);
     }
     
     
