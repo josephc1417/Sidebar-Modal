@@ -19,8 +19,10 @@ export const Sidebar = () => {
           const {id,url,text,icon,} = link;
           return(
             <li key={id}>
-              <a href={url}>{text}</a>
-              <span>{icon}</span>
+              <a href={url}>
+                {icon}
+                {text}
+              </a>
             </li>
           )
         })}
@@ -30,8 +32,9 @@ export const Sidebar = () => {
           const {id,url,icon,} = link;
           return(
             <li key={id}>
-              <a href={url}></a>
-              <span>{icon}</span>
+              <a href={url}>
+                {icon}
+              </a>
             </li>
           )
         })}
