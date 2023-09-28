@@ -372,12 +372,26 @@ Modal CSS
   display: grid;
   grid-template-rows: auto 1fr auto;
   box-shadow: var(--red-dark);
-  transition: var(--transition)
+  transition: var(--transition);
+
+  /*=============================================
+  =           Sidebar Toggle Logic            =
+  =============================================*/
+  transform: translateX(-100%);
 }
 
-/*=============================================
-=            Toggle Logic            =
-=============================================*/
+.show-sidebar{
+  transform: translateX(0);
+}
+/*=====  End of  Sidebar Toggle Logic  ======*/
+
+
+
+
+
+
+/* Sidebar Media Query */
+
 @media screen and (min-width:676px) {
   .sidebar{
     width: 400px;
@@ -440,12 +454,6 @@ Modal CSS
   color: var(--primary-500);
 }
 
-
-
-
-
-
-/*=====  End of Toggle Logic`  ======*/
 
 
 
